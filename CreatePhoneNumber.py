@@ -9,3 +9,11 @@
 def create_phone_number(digits):
     digits = "".join([str(num) for num in digits])
     return f"({digits[:3]}) {digits[3:6]}-{digits[6:]}"
+
+def main():
+    digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+    phone_number = create_phone_number(digits)
+    print(phone_number)
+
+if __name__ == "__main__":
+    main()
